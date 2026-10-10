@@ -265,14 +265,14 @@ def teacher_screen_login():
       header_dashboard()
 
     with c2:
-       if st.button("Go back to Home",type="secondary",key="loginbackbtn",shortcut="control+backspace"):
+       if st.button("Go back to Home",type="secondary",width='stretch',key="loginbackbtn"):
            st.session_state['login_type']=None
            st.rerun()
 
     st.header("Login using Password",text_alignment="center")
     st.space()
 
-    teacher_username=st.text_input("Enter your name",placeholder="xyz...")
+    teacher_username=st.text_input("Enter your username",placeholder="xyz...")
     st.space(1)
     teacher_password=st.text_input("Enter your password",type="password",placeholder='Enter password')
     st.divider()
@@ -330,13 +330,13 @@ def teacher_screen_register():
 
        teacher_password=st.text_input("Enter your password",type="password",placeholder='Enter password')
 
-       teacher_confirm_pass=st.text_input('Confrim password',type="password",placeholder="confirm password")
+       teacher_confirm_pass=st.text_input('Confrim  your password',type="password",placeholder="confirm password")
        st.divider()
        
        btncln1,btncln2=st.columns(2)
        
        with btncln1:
-          if st.button("Register Instead",icon=':material/passkey:',shortcut="control+enter",width="stretch"):
+          if st.button("Register Instead",icon=':material/passkey:',width="stretch"):
              success,message=register_teacher(teacher_username,teacher_name,teacher_password,teacher_confirm_pass)
              if success:
               st.success(message)

@@ -92,7 +92,7 @@ def student_screen():
         header_dashboard()
     with c2 :
        if st.button("Go back to home", type="secondary", key="logbckbtn", width='content'):
-         st.session_state["login"] = None
+         st.session_state["login_type"] = None
          st.rerun()
     
     st.header("Login using Face ID",text_alignment="center")
@@ -111,7 +111,7 @@ def student_screen():
                 st.warning('Face not found!')
 
             elif num_faces>1:
-                st.warning('To many faces found')
+                st.warning('Multiple faces found')
             else: 
                 if detected:
                     student_id=list(detected.keys())[0]
