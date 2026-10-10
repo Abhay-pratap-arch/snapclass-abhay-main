@@ -27,7 +27,7 @@ def style_background_dashboard():
         unsafe_allow_html=True
     )
 
-def style_background_layout():
+def style_base_layout():
     st.markdown(
         """
         <style>
@@ -35,9 +35,9 @@ def style_background_layout():
             @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Outfit:wght@100..900&display=swap');
 
             # /* Hide top toolbar, footer, and header */
-            # #MainMenu, footer, header {
-            #     visibility: hidden;
-            # }
+            #MainMenu, footer, header {
+                visibility: hidden;
+            }
 
             .block-container {
                 padding-top:5rem !important;
@@ -45,7 +45,7 @@ def style_background_layout():
 
             h1, h2 {
                 font-family: 'Climate Crisis', sans-serif !important;
-                font-size: 2.5rem !important;
+                font-size: 2rem !important;
                 line-height:2.52rem !important;
                 margin-bottom:0% !important; 
             }
