@@ -1,26 +1,26 @@
 #frontend 
-streamlit
+streamlit==1.38.0
 
 #utilites
-numpy
-pandas
+numpy==1.26.4
+pandas==2.2.2
 #face Recognition
-scikit-learn
-dlib-bin
+scikit-learn==1.5.2
+dlib-bin==19.24.2
 
 git+https://github.com/ageitgey/face_recognition_models
 setuptools>=77.0.3
 
 #database
-supabase
-bcrypt
+supabase==2.5.1
+bcrypt==4.2.0
 
 #qr code 
-segno
-pillow
+segno==1.6.1
+pillow==10.4.0
 
 
 # audio + ML
 librosa==0.10.2
 resemblyzer==0.2.2
-webrtcvad==2.0.
+webrtcvad==2.0.10
