@@ -1,6 +1,6 @@
 
 # frontend
-streamlit==1.39.0
+streamlit==1.65.0
 
 # utilities
 numpy==1.26.4
