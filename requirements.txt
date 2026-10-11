@@ -20,5 +20,7 @@ segno
 pillow
 
 
-librosa 
-resemblyzer
+# audio + ML
+librosa==0.10.2
+resemblyzer==0.2.2
+webrtcvad==2.0.
